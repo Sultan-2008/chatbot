@@ -1,0 +1,101 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Chat section styles */
+section.chat-section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow:  0 10px 15px -3px rgba(0,.0,.0,.0.1), 0 4px 6px -2px rgba(0,.0,.0,.0.05);
+}
+
+/* Brand styles */
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+/* .brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+} */
+
+.brand h1 {
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/* Message area styles */
+.message-area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+.outgoing-message {
+    background-color: #dcf8c6; /* Light green background for outgoing messages */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end; /* Align to the right */
+}
+
+.incoming-message {
+    background-color: lightseagreen; /* White background for incoming messages */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Align to the left */
+}
+
+.message-content {
+    max-width: 70%; /* Limit width to avoid taking up the full width of the container */
+}
+
+.incoming-message h3, .outgoing-message h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea styles */
+#textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .chat-section {
+        padding: 10px;
+    }
+    .brand h1 {
+        font-size: 1.2rem;
+    }
+}
